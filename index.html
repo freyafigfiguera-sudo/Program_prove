@@ -1073,6 +1073,15 @@ main{ margin-top:20px; }
 </style>
 
 
+
+<style>
+  /* Hide admin controls completely until explicitly enabled by password */
+  #adminControls, #adminPanel, #enterAdminBtn {
+    display: none !important;
+    visibility: hidden !important;
+  }
+</style>
+
 </head>
 <script type="text/javascript">
 window.__SCULPTED_INITIAL__ = {
@@ -1345,6 +1354,32 @@ window.__SCULPTED_INITIAL__ = {
 <!-- 🔸 DO NOT TOUCH ANYTHING BELOW THIS LINE -->
 
 
+
+
+<script>
+function enableAdminMode() {
+  state.isAdmin = true;
+  const adminPanel = document.getElementById('adminPanel');
+  const adminControls = document.getElementById('adminControls');
+  const adminBtn = document.getElementById('enterAdminBtn');
+  if (adminPanel) adminPanel.style.display = 'block';
+  if (adminControls) adminControls.style.display = 'block';
+  if (adminBtn) adminBtn.style.display = 'block';
+  alert('Admin mode enabled');
+}
+</script>
+
+
+<script>
+function fixYouTubeLinks() {
+  document.querySelectorAll('iframe').forEach(frame => {
+    if (frame.src.includes('watch?v=')) {
+      frame.src = frame.src.replace('watch?v=', 'embed/');
+    }
+  });
+}
+document.addEventListener('DOMContentLoaded', fixYouTubeLinks);
+</script>
 
 </body></html>
 

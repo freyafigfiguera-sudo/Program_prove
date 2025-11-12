@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<!doctype html>
+<html><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -1070,8 +1071,35 @@ main{ margin-top:20px; }
   }
 }
 </style>
+
+
 </head>
-<body class="admin-mode">
+<script type="text/javascript">
+window.__SCULPTED_INITIAL__ = {
+  "siteContent": {
+    "heroImages": {
+      "overview": "https://i.postimg.cc/Yr55X3Px/1.jpg",
+      "programInfo": "https://i.postimg.cc/44zdfwHS/cdfb88b3-ec16-4fef-a7a7-4b54034322a3.jpg",
+      "fitness": "https://i.postimg.cc/ZKgGvzN3/2.jpg",
+      "nutrition": "https://i.postimg.cc/CMMTWNYx/4.jpg"
+    },
+    "socialInsta": "https://www.instagram.com/kleagjocii/?hl=en",
+    "socialTiktok": "https://www.tiktok.com/discover/klea-gjoci",
+    "siteTitle": "Sculpted by Klea",
+    "siteTag": "Your Personal Wellness Journey",
+    "headerOverview": "Program Overview",
+    "headerProgramInfo": "Program Info",
+    "headerFitness": "Fitness",
+    "headerNutrition": "Nutrition",
+    "heroTitle": "Sculpted by Klea",
+    "heroDesc": "A 4-week luxury transformation plan combining smart nutrition and high-impact workouts — designed to tone, build, and refine."
+  },
+  "programSettings": {"fitnessWeeks":5,"nutritionWeeks":4},
+  "overviewStats": {"weeks":"4","days":"28","calories":"~1600","workouts":"5-6"}
+};
+</script>
+
+<body>
 <!-- Admin Panel -->
 <!-- Admin Panel -->
 <div class="admin-panel" id="adminPanel" aria-hidden="false" style="display: block;">
@@ -1264,7 +1292,12 @@ main{ margin-top:20px; }
         <img src="https://img.youtube.com/vi/7j-2w4-P14I/mqdefault.jpg" alt="YouTube thumbnail">
         <div class="play-overlay">▶</div>
       </a>
-    </div></td><td><button class="btn danger" style="font-size: 12px; padding: 6px 8px;">Delete</button></td></tr><tr><td contenteditable="true">Leg Press</td><td contenteditable="true">3 x 10-12</td><td contenteditable="true">Feet shoulder width, dont lock knees at top</td><td class="video-cell"><div style="display: flex; gap: 8px; align-items: center;"><input type="text" placeholder="YouTube URL or ID" style="flex: 1 1 0%; padding: 6px 8px; border: 1px solid rgba(42, 38, 36, 0.08); border-radius: 6px;"><button class="btn" style="font-size: 12px; padding: 6px 8px;">Preview</button></div><div class="video-wrap" id="video-1-1-2"></div></td><td><button class="btn danger" style="font-size: 12px; padding: 6px 8px;">Delete</button></td></tr></tbody>
+    </div></td><td><button class="btn danger" style="font-size: 12px; padding: 6px 8px;">Delete</button></td></tr><tr><td contenteditable="true">Leg Press</td><td contenteditable="true">3 x 10-12</td><td contenteditable="true">Feet shoulder width, dont lock knees at top</td><td class="video-cell"><div style="display: flex; gap: 8px; align-items: center;"><input type="text" placeholder="YouTube URL or ID" style="flex: 1 1 0%; padding: 6px 8px; border: 1px solid rgba(42, 38, 36, 0.08); border-radius: 6px;"><button class="btn" style="font-size: 12px; padding: 6px 8px;">Preview</button></div><div class="video-wrap" id="video-1-1-2" style="display: block;">
+      <a href="https://www.youtube.com/watch?v=5S8SApGU_Lk" target="_blank" class="video-thumb" title="Open YouTube">
+        <img src="https://img.youtube.com/vi/5S8SApGU_Lk/mqdefault.jpg" alt="YouTube thumbnail">
+        <div class="play-overlay">▶</div>
+      </a>
+    </div></td><td><button class="btn danger" style="font-size: 12px; padding: 6px 8px;">Delete</button></td></tr></tbody>
           </table>
         </div>
       </div>
@@ -1274,9 +1307,9 @@ main{ margin-top:20px; }
   <h2 class="editable" data-id="nutritionTitle" contenteditable="true">Nutrition — 4-Week Plan</h2>
   <p class="muted editable" data-id="nutritionDesc" contenteditable="true">Choose a week, then a day to view your meal plan.</p>
 
-  <div class="selector-row" id="nutritionWeekSelector"><button class="pill " data-week="1">Week 1</button><button class="pill " data-week="2">Week 2</button><button class="pill active" data-week="3">Week 3</button><button class="pill " data-week="4">Week 4</button></div>
-  <div class="day-grid" id="nutritionDayGrid"><div class="day " data-day="1">Mon</div><div class="day " data-day="2">Tue</div><div class="day " data-day="3">Wed</div><div class="day " data-day="4">Thu</div><div class="day " data-day="5">Fri</div><div class="day " data-day="6">Sat</div><div class="day active" data-day="7">Sun</div></div>
-  <div id="nutritionDayPanel"><div class="meals" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 6px;"><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Breakfast</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Lunch</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Dinner</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Snack</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div style="grid-column: 1 / -1; text-align: center; padding: 20px;"><button class="btn success">+ Add Meal</button></div></div></div>
+  <div class="selector-row" id="nutritionWeekSelector"><button class="pill active" data-week="1">Week 1</button><button class="pill " data-week="2">Week 2</button><button class="pill " data-week="3">Week 3</button><button class="pill " data-week="4">Week 4</button></div>
+  <div class="day-grid" id="nutritionDayGrid"><div class="day active" data-day="1">Mon</div><div class="day " data-day="2">Tue</div><div class="day " data-day="3">Wed</div><div class="day " data-day="4">Thu</div><div class="day " data-day="5">Fri</div><div class="day " data-day="6">Sat</div><div class="day " data-day="7">Sun</div></div>
+  <div id="nutritionDayPanel"><div class="meals" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; margin-top: 6px;"><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Breakfast</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Lunch</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Dinner</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Snack</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div class="meal" style="padding: 12px; border-radius: 10px; background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(250, 250, 248, 0.95)); border: 1px solid rgba(42, 38, 36, 0.03);"><div class="meal-title" contenteditable="true">Snack</div><div class="meal-body" contenteditable="true">Meal description...</div><div class="macro-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;"><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Protein: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Carbs: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Fat: --g</div><div class="macro" contenteditable="true" style="background: rgba(42, 38, 36, 0.05); padding: 6px 8px; border-radius: 8px; font-size: 12px;">Calories: --</div></div><button class="btn danger" style="margin-top: 8px;">Delete Meal</button></div><div style="grid-column: 1 / -1; text-align: center; padding: 20px;"><button class="btn success">+ Add Meal</button></div></div></div>
 
       <div style="margin-top: 12px; gap: 8px; align-items: center; flex-wrap: wrap;" class="user-hidden">
         <button class="btn primary editable" data-id="saveNutritionText" id="saveNutritionBtn" contenteditable="true">Save Nutrition</button>
@@ -1306,6 +1339,14 @@ main{ margin-top:20px; }
     </div>
   </footer>
 </div>
+<!-- 🔹 ADD THIS NEW BLOCK RIGHT HERE -->
+
+
+<!-- 🔸 DO NOT TOUCH ANYTHING BELOW THIS LINE -->
+
+
+
+</body></html>
 
 <script>
 /* ========== State & Defaults (unchanged core logic) ========== */
@@ -1320,10 +1361,10 @@ const state = {
   programSettings: { fitnessWeeks: 4, nutritionWeeks: 4 },
  siteContent: {
   heroImages: {
-  overview: "data:image/jpeg;base64,{{IMG1}}",
-  programInfo: "data:image/jpeg;base64,{{IMG2}}",
-  fitness: "data:image/jpeg;base64,{{IMG3}}",
-  nutrition: "data:image/jpeg;base64,{{IMG4}}"
+  overview: "https://i.postimg.cc/ZKgGvzN3/2.jpg&quot;",
+  programInfo: "https://i.postimg.cc/ZKgGvzN3/2.jpg&quot;",
+  fitness: "https://i.postimg.cc/ZKgGvzN3/2.jpg&quot;",
+  nutrition: "https://i.postimg.cc/ZKgGvzN3/2.jpg&quot;"
 },
     socialInsta: '',
     socialTiktok: ''
@@ -1381,49 +1422,38 @@ function applyEmbeddedToLocalStorage(embedded) {
   }
 }
 
-function loadAll(){
-  // 1) If the exported HTML embedded initial data, use it first
+function loadAll() {
+  // 1️⃣ First, check if embedded data exists (from exported HTML)
   if (window && window.__SCULPTED_INITIAL__) {
     try {
-      const embedded = window.__SCULPTED_INITIAL__;
-      if (embedded.siteContent) state.siteContent = Object.assign({}, state.siteContent, embedded.siteContent);
-      if (embedded.fitnessData) state.fitnessData = Object.assign({}, state.fitnessData, embedded.fitnessData);
-      if (embedded.nutritionData) state.nutritionData = Object.assign({}, state.nutritionData, embedded.nutritionData);
-      if (embedded.programSettings) state.programSettings = Object.assign({}, state.programSettings, embedded.programSettings);
-      if (embedded.overviewStats) state.overviewStats = Object.assign({}, state.overviewStats, embedded.overviewStats);
+      let embedded = window.__SCULPTED_INITIAL__;
+      console.log('Using embedded Sculpted data from HTML export');
 
-      // Auto-save the embedded payload into localStorage only if there's no existing localStorage data.
-      applyEmbeddedToLocalStorage(embedded);
+      // Directly replace entire state with embedded payload
+      Object.assign(state, JSON.parse(JSON.stringify(embedded)));
+
+      // Auto-save it into localStorage (so if user refreshes, it persists)
+      localStorage.setItem('sculpted_state_embedded', JSON.stringify(state));
+      return; // ✅ Stop here — don’t overwrite with old localStorage defaults
     } catch (err) {
-      console.warn('Failed to parse embedded sculpted data', err);
+      console.warn('Failed to apply embedded Sculpted data', err);
     }
   }
 
-  // 2) Existing localStorage fallback (your original behavior)
+  // 2️⃣ Otherwise, fallback to localStorage (for normal use)
   try {
-    const rawN = localStorage.getItem('sculpted_nutrition_v13');
-    const rawF = localStorage.getItem('sculpted_fitness_v13');
-    const rawP = localStorage.getItem('sculpted_program_settings_v13');
-    const rawS = localStorage.getItem('sculpted_site_content_v13');
-    const rawO = localStorage.getItem('sculpted_overview_stats_v13');
-
-    if (rawN) state.nutritionData = JSON.parse(rawN);
-    if (rawF) state.fitnessData = JSON.parse(rawF);
-    if (rawP) state.programSettings = JSON.parse(rawP);
-    if (rawO) state.overviewStats = JSON.parse(rawO);
-
-    if (rawS) {
-      const s = JSON.parse(rawS);
-      state.siteContent = Object.assign({}, state.siteContent, s);
-      // If you have heroImages etc. that need copying, do that here safely:
-      if (s.heroImages) state.siteContent.heroImages = Object.assign({}, s.heroImages);
+    const raw = localStorage.getItem('sculpted_state_embedded');
+    if (raw) {
+      state = JSON.parse(raw);
+      console.log('Loaded Sculpted state from localStorage cache');
+      return;
     }
   } catch (e) {
-    console.warn('loadAll localStorage fallback parse error', e);
+    console.warn('LocalStorage fallback failed', e);
   }
 
-  // Continue with the rest of your loadAll logic (rendering, etc.)
-  // ... (leave subsequent code unchanged)
+  // 3️⃣ If no data found, state remains empty/default
+  console.warn('No embedded or stored Sculpted data found — using defaults.');
 }
 
 /* ---------- Defaults ---------- */
@@ -1746,7 +1776,7 @@ function addExercise(){
   state.fitnessData[activeFitnessWeek][activeFitnessDay].push({
     name: 'New Exercise',
     sets: '3 x 10',
-    form: 'Form tips...',
+    form: 'Form tips',
     youtube: ''
   });
   renderExercises();
@@ -1756,7 +1786,7 @@ function addExercise(){
 function addFitnessWeek(){
   if(!state.isAdmin) return;
   const weeks = Object.keys(state.fitnessData).map(Number);
-  const newWeek = weeks.length > 0 ? Math.max(...weeks) + 1 : 1;
+  const newWeek = weeks.length > 0 ? Math.max(weeks) + 1 : 1;
   state.fitnessData[newWeek] = {};
   state.programSettings.fitnessWeeks = newWeek;
   for(let day = 1; day <= 7; day++) state.fitnessData[newWeek][day] = [];
@@ -1966,7 +1996,7 @@ function renderNutritionDay(){
 
     const bodyEl = document.createElement('div');
     bodyEl.className = 'meal-body';
-    bodyEl.textContent = meal.body || 'Meal description...';
+    bodyEl.textContent = meal.body || 'Meal description';
     if (state.isAdmin) {
       bodyEl.contentEditable = 'true';
       bodyEl.addEventListener('blur', (e) => {
@@ -2035,7 +2065,7 @@ function renderNutritionDay(){
     addBtn.addEventListener('click', () => {
       state.nutritionData[week][day].meals.push({
         title: 'New Meal',
-        body: 'Meal description...',
+        body: 'Meal description',
         macros: ['Protein: --g','Carbs: --g','Fat: --g','Calories: --']
       });
       renderNutritionDay();
@@ -2245,8 +2275,22 @@ function boot(){
 
   // Wire top header clickable pills (already uses data-tab above)
 }
-
-document.addEventListener('DOMContentLoaded', boot);
+// Wait for embedded data to write before booting
+document.addEventListener('DOMContentLoaded', function() {
+  // Small delay to ensure embedded JSON is fully parsed & stored
+  setTimeout(() => {
+    try {
+      console.log('⏳ Booting app after embedded data sync');
+      if (typeof boot === 'function') {
+        boot();
+      } else {
+        console.warn('⚠️ boot() not found at startup');
+      }
+    } catch (err) {
+      console.error('❌ Boot error:', err);
+    }
+  }, 200); // 200ms delay gives time for embedded JSON + localStorage to be ready
+});
 document.addEventListener('DOMContentLoaded', () => {
   const adminBtn = document.getElementById('enterAdminBtn');
   if (adminBtn) {
@@ -2281,5 +2325,3 @@ document.addEventListener('keydown', (e) => {
 });
 </script>
 
-
-</body></html>
